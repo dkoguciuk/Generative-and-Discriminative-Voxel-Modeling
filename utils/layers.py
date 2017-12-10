@@ -13,9 +13,9 @@ from lasagne.layers import Layer
 import theano
 import theano.tensor as T
 
-from theano.sandbox.cuda import dnn
-from theano.sandbox.cuda.basic_ops import gpu_contiguous, gpu_alloc_empty
-from theano.sandbox.cuda.dnn import GpuDnnConvDesc,  GpuDnnConv3dGradI
+from theano.gpuarray import dnn
+from theano.gpuarray.basic_ops import GpuContiguous, GpuAllocEmpty
+from theano.gpuarray.dnn import GpuDnnConvDesc
 from lasagne.utils import as_tuple
 
 
